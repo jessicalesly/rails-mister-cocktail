@@ -1,0 +1,51 @@
+<div class="banner">
+  <div class="banner-content">
+    <h1>Mister Cocktail</h1>
+    <p>Find hundreds of cocktails.</p>
+    <!-- <a href="" class="btn-yours">Discover</a> -->
+  </div>
+</div>
+
+<div class="wrapper-cards">
+  <h2 class="text-center">Choose a cocktail</h2>
+  <div class="container">
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="card">
+            <a href="http://mainsquarefestival.fr/" target="_blank">
+            <div class="card-body">
+              <h2 class="card-category"><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+              <!-- <div class="card-avatar">
+                <img src="images/profile_pic.jpg" alt="" class="avatar">
+              </div> -->
+              <div class="card-desc">
+                <p>Cocktail's description<%#= cocktail.description %></p>
+              </div>
+            </div>
+            </a>
+            <div class="card-footer">
+                <p class="card-date">Posted on <%= cocktail.created_at %> </p>
+              <div class="card-links">
+                <ul class="list-inline">
+                  <li><a href = ""><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                  <li><a href= ""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href= ""><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<%= link_to "Add a new cocktail", new_cocktail_path %>
+
