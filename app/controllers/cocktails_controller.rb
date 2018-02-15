@@ -1,6 +1,10 @@
 class CocktailsController < ApplicationController
   def index
-    @cocktails = Cocktail.all
+    @cocktails = if params[:search]
+        Cocktail.where('lower(name) LIKE ?', "%#{params[:search]}%")
+      else
+        Cocktail.all
+      end
   end
 
   def show

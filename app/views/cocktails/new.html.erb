@@ -1,5 +1,25 @@
-<%= simple_form_for [@cocktail] do |f| %>
-  <%= f.input :name %>
+<div class="banner">
+  <div class="banner-content">
+    <h1>Add a new cocktail</h1>
+    <%= simple_form_for [@cocktail] do |f| %>
+      <br>
+      <%= f.input :name, label: false, class:"form-group" %>
+      <br>
+      <%= f.submit "Create", class: "btn btn-primary" %>
+    <% end %>
+    <br>
+    <%= link_to "Go back to cocktails", cocktails_path %>
+    <!-- <a href="" class="btn-yours">Discover</a> -->
+  </div>
+</div>
 
-  <%= f.submit "add a cocktail", class: "btn btn-primary" %>
-<% end %>
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2>Add a new cocktail</h2>
+
+    </div>
+  </div>
+</div> -->
+

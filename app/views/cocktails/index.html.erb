@@ -1,21 +1,33 @@
 <div class="banner">
   <div class="banner-content">
     <h1>Mister Cocktail</h1>
-    <p>Find hundreds of cocktails.</p>
+    <p>
+      <span id="banner-typed-text"></span>
+    </p>
     <!-- <a href="" class="btn-yours">Discover</a> -->
   </div>
 </div>
 
+<div class="wrapper-form">
+  <h2>Find a cocktail</h2>
+  <!-- <p>Type a cocktail to find</p> -->
+  <form action="/cocktails" method="get" class="form-inline">
+    <input type="search" id="search" name="search" class="form-control" placeholder="Mojito, Gin fizz,...">
+    <input type="submit" value="Search" class="btn btn-primary">
+  </form>
+</div>
+
 <div class="wrapper-cards">
-  <h2 class="text-center">Choose a cocktail</h2>
+  <h2 class="text-center">Most popular cocktails</h2>
   <div class="container">
     <div class="row">
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <div class="card">
-            <a href="http://mainsquarefestival.fr/" target="_blank">
-            <div class="card-body">
+            <a href="" target="_blank">
+            <div class="card-body" style ="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(<%="https://source.unsplash.com/1600x900/?#{cocktail.name.downcase}"%>);">
               <h2 class="card-category"><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+
               <!-- <div class="card-avatar">
                 <img src="images/profile_pic.jpg" alt="" class="avatar">
               </div> -->
@@ -43,9 +55,9 @@
   </div>
 </div>
 
-<br>
-<br>
-<br>
-
-<%= link_to "Add a new cocktail", new_cocktail_path %>
+<div class="wrapper-form">
+  <h2>Add a new cocktail</h2>
+  <!-- <p>Type a cocktail to find</p> -->
+  <%= link_to "Be creative", new_cocktail_path, class:"btn btn-primary" %>
+</div>
 

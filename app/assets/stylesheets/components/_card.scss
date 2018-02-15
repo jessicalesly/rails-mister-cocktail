@@ -33,7 +33,7 @@
   background-position: center;
   position: relative;
   height: 275px;
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('cocktail.jpg');
+  // background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('cocktail.jpg');
 }
 .card-category {
   position: absolute;
@@ -94,7 +94,7 @@
 
 .wrapper-cards {
   background-color: #F4F4F4;
-  padding: 90px;
+  padding: 10px 90px;
 }
 
 .wrapper-map {
