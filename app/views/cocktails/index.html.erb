@@ -22,7 +22,7 @@
   <div class="container">
     <div class="row">
       <% @cocktails.each do |cocktail| %>
-        <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="col-xs-12 col-sm-12 col-md-4">
           <div class="card">
             <a href="" target="_blank">
             <div class="card-body" style ="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(<%="https://source.unsplash.com/1600x900/?#{cocktail.name.downcase}"%>);">
@@ -37,12 +37,12 @@
             </div>
             </a>
             <div class="card-footer">
-                <p class="card-date">Posted on <%= cocktail.created_at %> </p>
+                <p class="card-date">Posted on <%= cocktail.created_at.strftime("%b %d, %Y") %> </p>
               <div class="card-links">
                 <ul class="list-inline">
-                  <li><a href = ""><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                  <li><a href= ""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href= ""><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href = ""><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href= ""><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
+                  <!-- <li><a href= ""><i class="fab fa-facebook" aria-hidden="true"></i></a></li> -->
                 </ul>
               </div>
             </div>

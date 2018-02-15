@@ -1,16 +1,16 @@
 /* Your banner CSS code here */
 /* Your banner CSS file */
-.banner {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), asset-url('banner.jpeg');
+.small-banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), asset-url('banner2.jpeg');
   background-size: cover;
-  height: 100vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-position: center;
 }
 
-.banner-content {
+.small-banner-content {
   color: white;
   text-align: center;
   a {
@@ -18,14 +18,13 @@
   }
 }
 
-.banner-content h1{
+.small-banner-content h1{
   font-size: 50px;
   font-weight: bold;
 }
 
-.banner-content p {
+.small-banner-content p {
   font-size: 27px;
   color: rgb(200,200,200);
   margin-bottom: 40px;
 }
-
