@@ -9,5 +9,7 @@
 // import 'bootstrap';
 
 console.log('Hello World from Webpacker')
+import './components/select2';
+console.log("bonjour")
 import { loadDynamicBannerText } from './components/banner';
 loadDynamicBannerText();
