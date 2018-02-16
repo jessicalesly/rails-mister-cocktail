@@ -3,6 +3,36 @@
   text-align: center;
   padding: 100px 40px;
   background-color: #dbdbdb;
+  h3 {
+    padding-bottom: 30px;
+    color: #ba1818;
+  }
+}
+
+#wrapper-blank-with-links {
+  a {
+    color: black;
+    padding: 50px;
+    font-size: 20px;
+    &:hover {
+      text-decoration: none;
+      color: #ba1818;
+    }
+  }
+}
+
+.wrapper-dark {
+  background-color: #181818;
+  color: #F4F4F4;
+  padding: 50px 0px;
+  a {
+    padding-left: 5px;
+    color: #ba1818;
+    &:hover {
+      text-decoration: none;
+      color:#F4F4F4;
+    }
+  }
 }
 
 .wrapper-form h2 {
@@ -16,4 +46,12 @@
 
 .btn:hover {
   background-color: #900D0D;
+}
+
+.wrapper-form-space-between {
+  // margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 40px;
+  background-color: #dbdbdb;
 }

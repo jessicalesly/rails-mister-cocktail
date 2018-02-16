@@ -3,7 +3,7 @@
 .small-banner {
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), asset-url('banner2.jpeg');
   background-size: cover;
-  height: 30vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -13,6 +13,8 @@
 .small-banner-content {
   color: white;
   text-align: center;
+  padding: 30px 120px;
+  border: 2px solid #F4F4F4;
   a {
     color: white;
   }
