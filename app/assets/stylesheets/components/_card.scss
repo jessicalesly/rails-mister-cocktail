@@ -24,22 +24,34 @@
   display: inline-block;
 }
 .card {
-  box-shadow: 2px 2px 2px 2px grey;
+  // box-shadow: 2px 2px 2px 2px white;
   margin: 15px;
+  background-size: cover;
+  background-position: center;
 }
 .card-body {
   color: white;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  // border: 0.1px solid #F4F4F4;
+  // background-size: cover;
+  // background-position: center;
+  // position: relative;
   height: 275px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   // background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('cocktail.jpg');
 }
 .card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  margin: 0px;
+  // position: absolute;
+  // top: 10px;
+  // left: 10px;
+  font-size: 60px;
+  // font-family: $mono;
+  font-weight: 200;
+  padding: 10px 30px;
+  border: 1px solid #F4F4F4;
+  margin: 10px;
+  text-align: center;
   a {
     color: white;
   }
@@ -73,7 +85,8 @@
 }
 .card:hover {
   /*box-shadow: 2px 2px 2px 2px black;*/
-  box-shadow: 0.5em 0.5em .4em grey;
+  // box-shadow: 0.5em 0.5em .4em grey;
+  // border: 1px solid #F4F4F4;
   /*margin-top: -5px;*/
 }
 .card-date {
@@ -93,8 +106,15 @@
 }*/
 
 .wrapper-cards {
-  background-color: #F4F4F4;
+  background-color: #181818;
+  // background-color: white;
   padding: 10px 90px;
+  color: #F4F4F4;
+  h2 {
+    font-weight: 300;
+    padding-bottom: 15px;
+    // font-size: 50px;
+  }
 }
 
 .wrapper-map {

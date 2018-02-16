@@ -22,30 +22,31 @@
   <div class="container">
     <div class="row">
       <% @cocktails.each do |cocktail| %>
-        <div class="col-xs-12 col-sm-12 col-md-4">
-          <div class="card">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="card" style ="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(<%="https://source.unsplash.com/1600x900/?mojito"%>);">
+            <!-- #{cocktail.name.downcase} -->
             <a href="" target="_blank">
-            <div class="card-body" style ="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(<%="https://source.unsplash.com/1600x900/?#{cocktail.name.downcase}"%>);">
-              <h2 class="card-category"><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+            <div class="card-body">
+              <h3 class="card-category"><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+
 
               <!-- <div class="card-avatar">
                 <img src="images/profile_pic.jpg" alt="" class="avatar">
               </div> -->
-              <div class="card-desc">
+              <!-- <div class="card-desc">
                 <p>Cocktail's description<%#= cocktail.description %></p>
-              </div>
+              </div> -->
             </div>
             </a>
-            <div class="card-footer">
-                <p class="card-date">Posted on <%= cocktail.created_at.strftime("%b %d, %Y") %> </p>
+            <!-- <div class="card-footer">
+                <p class="card-date">Cocktail's description<%#= cocktail.description %></p>
               <div class="card-links">
                 <ul class="list-inline">
                   <li><a href = ""><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                   <li><a href= ""><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
-                  <!-- <li><a href= ""><i class="fab fa-facebook" aria-hidden="true"></i></a></li> -->
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
