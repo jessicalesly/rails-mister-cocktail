@@ -5,6 +5,9 @@
       <br>
       <%= f.input :name, label: false, class:"form-group" %>
       <br>
+      <%= f.input :photo %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <br>
       <%= f.submit "Create", class: "btn btn-primary" %>
     <% end %>
     <br>

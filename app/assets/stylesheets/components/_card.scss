@@ -55,6 +55,14 @@
   a {
     color: white;
   }
+  &:hover {
+    background-color: #dbdbdb;
+    color: black;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 .card-avatar{
   position: absolute;

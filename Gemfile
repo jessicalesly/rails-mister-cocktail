@@ -7,6 +7,9 @@ end
 
 ruby '2.4.3'
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record

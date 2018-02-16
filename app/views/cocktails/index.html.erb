@@ -1,6 +1,6 @@
 <div class="banner">
   <div class="banner-content">
-    <h1>Mister Cocktail</h1>
+    <h1>Le Wagon Bar</h1>
     <p>
       <span id="banner-typed-text"></span>
     </p>
@@ -23,8 +23,13 @@
     <div class="row">
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-12 col-md-6">
-          <div class="card" style ="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(<%="https://source.unsplash.com/1600x900/?mojito"%>);">
-            <!-- #{cocktail.name.downcase} -->
+          <% if cocktail.photo.file.nil? %>
+            <div class="card" style ="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?mojito')">
+          <% else %>
+            <div class="card" style ="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
+          <% end %>
+            <!-- #{cocktail.photo} -->
             <a href="" target="_blank">
             <div class="card-body">
               <h3 class="card-category"><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
